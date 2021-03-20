@@ -1,8 +1,8 @@
 import requests
 from pprint import pprint
 import time
-from decouple import config
-from alpha_vantage.timeseries import TimeSeries
+# from decouple import config
+# from alpha_vantage.timeseries import TimeSeries
 import pandas as pd
 
 url = "https://www.alphavantage.co/query?function=TIME_SERIES_DAILY_ADJUSTED&symbol=BSE:PIIND&apikey=XYZ"
