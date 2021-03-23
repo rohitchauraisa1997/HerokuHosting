@@ -1,3 +1,7 @@
+<<<<<<< HEAD
+poetry.lock
+pyproject.toml
+=======
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
@@ -127,3 +131,4 @@ dmypy.json
 
 # Pyre type checker
 .pyre/
+>>>>>>> a728e11db9cd0ffc4a4a8e9c672060868fd4e667
