@@ -1,3 +1,5 @@
+import os
+
 from flask import Flask
 from flask_restful import Api
 from flask_jwt import JWT
@@ -11,7 +13,8 @@ from db import db
 app = Flask(__name__)
 # here we turn off the tracking from flask's SQLAlchemy.
 # but SqlAlchemy itself keeps the tracking on.
-app.config['SQLALCHEMY_DATABASE_URI'] = "sqlite:///data.db"
+# chhanging sqlite to postgres.
+app.config['SQLALCHEMY_DATABASE_URI'] = os.environ.get('DATABASE_URL',"sqlite:///data.db")
 app.config["SQLALCHEMY_TRACK_MODIFICATIONS"] = False
 app.secret_key = "rohit"
 api = Api(app)

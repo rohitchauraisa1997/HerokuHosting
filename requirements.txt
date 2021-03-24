@@ -4,3 +4,4 @@ Flask-JWT
 Flask-SQLAlchemy
 uwsgi
 SQLAlchemy==1.3.23
+psycopg2
